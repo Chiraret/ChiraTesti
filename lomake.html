@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Regular expression</title>
+	<meta charset="UTF-8"> 
+</head>
+
+<body>
+<h3>Varaukset</h3>
+
+<form action= "nayta.php" method = "post" >
+  Etunimi: <input type="text" name="Etunimi" required> Sukunimi:<input type="text" name="Sukunimi" required> <br>
+  Katuosoite:<input type="text" name="Katuosoite" required> 
+  Postitoimipaikka: <input type="text" name="Postitoimipaikka" required> 
+  Postinumero:<input type="number" name="Postinumero" pattern="[0-9]{5}" required> <br>
+  Puhelinnumero:<input type="number2 name="Puhelinnumero" placeholder="muodossa 0451512771"required> 
+  Sähköposti:<input type="text" name="Sähköposti" required> <br>
+  
+ <h3>Tilaus</h3>
+<h4>valitse tuote</h4>
+<select id="tuote" name="tuotee">
+  <option value="1">Salibandy</option>
+  <option value="2">Tennis</option>
+  <option value="3">Golf</option>
+</select> 
+
+ Määrä: <input type="number" name="Määrä" pattern="[1-5]{1}" id="fname" name="fname" size="1" required> 
+ <input type="submit" value="Tilaa">
+
+</form> <br>
+
+<!-- <form>
+  <label for="country_code">Country code:</label>
+  <input type="text" id="country_code" name="country_code"
+  pattern="[A-Za-z]{3}" title="Three letter country code">
+</form> -->
+
+</body>
+
+</html>
